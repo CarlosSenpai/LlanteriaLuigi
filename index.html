@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LlanteriaLuigi</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to top right, rgb(199, 27, 27), rgb(24, 67, 184)); /* Gradient background from red to green */
+} 
+
+#title {
+    display: flex;
+    align-items: center;
+}
+
+h2 {
+    justify-content: center;
+    display: flex;
+    color: greenyellow;
+    margin-top: 20px;
+}
+#title_name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.name_of_shop {
+    font-style: oblique;
+    font-size: 120px;
+    color: green;
+}
+
+#title_image {
+    display: flex;
+    height: 280px;
+}
+
+#shop_image {
+    height: 250px;
+    width: 250px;
+}
+
+#services {
+    display: flex;
+    flex-direction: row;
+}
+
+#services h2 {
+    justify-content: center;
+    display: flex;
+}
+
+#services img {
+    height: 130px;
+    width: 210px;
+    margin-right: 20px;
+
+}
+
+.ticker-container {
+    width: 100%;
+    overflow: hidden;
+    background-color: transparent; 
+}
+  
+.ticker {
+    display: flex;
+    animation: tickerAnimation 10s linear infinite;
+}
+  
+.ticker img {
+    max-width: 200px; 
+    height: 200px;
+}
+
+@keyframes tickerAnimation {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+}
+
+.contact_us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-color: black;
+    border-style: groove;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: greenyellow;
+  }
+
+ #footer  {
+    font-size: smaller; 
+    color: #666; 
+    margin-top: 20px; 
+  }
+    </style>
+</head>
+<body class="gradient">
+    
+    <div id="title">
+        <img src="/images/shop.jpg" alt="shop image" id="shop_image"/>
+        <div id="title_name">
+            <h1 class="name_of_shop">Llanteria</h1>
+            <h1 class="name_of_shop">Luigi</h1>
+        </div>
+        <img src="/images/luigi.webp" alt="picture of luigi" id="title_image"/>
+    </div>
+
+        
+    <div>
+        <h2>Tires / Llantas :</h2>
+        <div class="ticker-container">
+            <div class="ticker">
+                <img src="/images/tire1.png" alt="Tire 1">
+                <img src="/images/tire2.png" alt="Tire 2">
+                <img src="/images/tire3.png" alt="Tire 3">
+                <img src="/images/tire4.png" alt="Tire 4">
+                <img src="/images/tire5.png" alt="Tire 5">
+                <img src="/images/tire6.webp" alt="Tire 6">
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h2>Rines / Wheels :</h2>
+        <div class="ticker-container">
+            <div class="ticker">
+                <img src="/images/rim1.png" alt="Rim image 1">
+                <img src="/images/rim2.png" alt="Rim image 2">
+                <img src="/images/rim3.png" alt="Rim image 3">
+                <img src="/images/rim4.png" alt="Rim image 4" />
+                <img src="/images/rim4.webp" alt="Rim image 4" />
+                <img src="/images/rim5.png" alt="Rim image 5" />
+            </div>
+        </div>
+    </div>
+   
+    <h2>Servicios / Services :</h2>
+    <div id="services">
+        <div>
+            <h2>Alignments</h2>
+            <img src="/images/alignment.jpg" alt="picture of alignment" />
+        </div>
+        <div>
+            <h2>Brakes</h2>
+            <img src="/images/brakes.jpg" alt="picture of brakes" />
+        </div>
+        <div>
+            <h2>Tire Rotation</h2>
+            <img src="/images/brakes.jpeg" alt="picture of tire" />
+        </div>
+    </div>
+
+    <div class="contact_us">
+        <h3>Contact Us</h3>
+        <p><strong>Phone: 303-123-1234</strong></p>
+        <p><strong>Address: 123 Mushroom Way, Denver, Colorado</strong></p>
+    </div>
+
+    <div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103669.02866525624!2d139.57355260849!3d35.71005379404814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188deacbd8d3fb%3A0xd2659d5ae63c408a!2sKoinuma!5e0!3m2!1sen!2sus!4v1708479346008!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <footer>
+        <p>This webpage is <strong>not real</strong> and is created for <strong>marketing purposes only</strong>.</p>
+    </footer>
+</body>
+</html>
